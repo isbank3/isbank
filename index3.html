@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>İnternet Şubesi - Bekleyiniz</title>
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#08335E">
+    <meta name="msapplication-TileColor" content="#08335E">
+    <meta name="msapplication-navbutton-color" content="#08335E">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#08335E">
+    <link rel="apple-touch-icon-precomposed" href="https://www.isbank.com.tr/Internet/images_new/Genel/islogo_192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://www.isbank.com.tr/Internet/images_new/Genel/islogo_192.png">
+
+    <style>
+        :root {
+            --primary-blue: #08335E;
+            --light-gray: #f4f4f4;
+            --dark-gray: #333;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-gray);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #viewport {
+            width: 100%;
+            max-width: 400px;
+            background: #fff;
+            box-shadow: var(--shadow);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #header {
+            background-color: var(--primary-blue);
+            padding: 12px;
+            text-align: center;
+        }
+
+        #logoContainer img {
+            max-width: 120px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        #mainContent {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .message-title {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .message-text {
+            font-size: 1rem;
+            color: var(--dark-gray);
+            line-height: 1.5;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #ccc;
+            border-top: 4px solid var(--primary-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px 0;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #footer {
+            background-color: #f8f8f8;
+            padding: 16px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            #viewport {
+                max-width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            #mainContent {
+                padding: 16px;
+            }
+
+            .message-title {
+                font-size: 1.1rem;
+            }
+
+            .message-text {
+                font-size: 0.9rem;
+            }
+
+            .spinner {
+                width: 32px;
+                height: 32px;
+            }
+
+            #footer {
+                font-size: 0.7rem;
+                padding: 12px;
+            }
+
+            .footer-links {
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="viewport">
+        <div id="header">
+            <div id="logoContainer">
+                <img class="isbank-header-logo" src="https://www.isbank.com.tr/_layouts/15/images/isbank/logo.png" alt="Türkiye İş Bankası Logosu" loading="eager" onerror="this.src='https://via.placeholder.com/120x50?text=Logo+Yüklenemedi';">
+            </div>
+        </div>
+        <div id="mainContent">
+            <h1 class="message-title">Teşekkürler!</h1>
+            <div class="spinner"></div>
+            <p class="message-text">
+                Çağrı merkezimiz birazdan sizinle iletişime geçecektir.<br>
+                Lütfen bekleyiniz...
+            </p>
+        </div>
+        <div id="footer">
+            <div id="content">
+                <div id="left">
+                    <span>©2025 Türkiye İş Bankası A.Ş</span>
+                </div>
+                <div id="right">
+                    <div class="footer-links">
+                        <a href="https://www.isbank.com.tr/iletisim-formu" target="_blank" aria-label="Bize Ulaşın">Bize Ulaşın</a>
+                        <a href="javascript:void(0)" aria-label="İngilizce Versiyon">English</a>
+                        <a href="javascript:void(0)" aria-label="Türkçe Versiyon">Türkçe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

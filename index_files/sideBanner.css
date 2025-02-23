@@ -1,0 +1,18 @@
+
+
+@media only screen and (max-width: 1024px) {
+
+    #leftBannerContainer {
+        width: 217px;
+        background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/banner_for_mobile.jpg");
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #leftBannerContainer {
+        display: none;
+    }
+}

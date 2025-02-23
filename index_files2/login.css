@@ -1,0 +1,691 @@
+button, input[type="submit"] {
+    border: none;
+    border-spacing: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    margin-right: 0;
+}
+
+.newUpdateBrowserContainer {
+    color: #000000;
+    margin: 10px 30px 0 0;
+    border: 1px solid #cecece;
+    padding: 25px 50px 25px 0;
+    background-color: #f8f8f8;
+}
+
+
+
+.api-container {
+    background-color: #f8f8f8;
+    border: solid 1px #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    padding: 25px 10px 15px 15px;
+    margin-bottom: 20px;
+    width: 495px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.api-container .api-logo {
+    width: 200px;
+    height: 39px;
+    margin-right: 13px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.api-container .api-text-container {
+    color: #000000;
+}
+
+.api-container .api-text-container .api-text.grey {
+    margin-top: 5px;
+    color: #5d5d5d;
+}
+
+.api-container.mobil-onay {
+    margin-top: 30px;
+}
+
+.api-container.mobil-imza {
+    margin-top: 55px;
+}
+
+.info-container {
+    background-color: #f1f9ff;
+    color: #07345e;
+    padding: 15px 18px 15px 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 495px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.info-container.apiLoginKVKContainer {
+    background-color: white;
+
+}
+.info-container.apiLoginKVKContainer div {
+    padding-bottom:10px
+}
+
+.info-container.apiLoginKVKContainer div a {
+text-decoration:underline
+
+}
+
+#apiLoginInfoKVKApprovalContainer {
+    display:table;
+}
+#apiLoginInfoKVKApprovalContainer  div{
+    display:table-row;
+    margin-left:18px;
+}
+
+#apiLoginInfoKVKApprovalContainer  div span{
+     text-align: justify;
+    text-justify:auto
+}
+#approveKVKLabel {
+    display:inline-block;
+    float:left
+}
+
+
+#apiLoginInfoKVKApprovalContainer  input{
+    margin-right: 6px;
+    margin-left:-18px;
+
+}
+@media only screen and (max-width: 1024px) {
+    #apiLoginInfoKVKApprovalContainer  input{
+     transform: scale(1.5);
+  /* Webkit browsers*/
+  -webkit-transform: scale(1.5);
+      margin-right: 10px;
+
+
+}
+
+}
+
+
+
+.info-container a {
+    font-weight: bold;
+}
+
+.info-container .info-icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 15px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.newUpdateBrowserContainer .error-icon-container {
+    position: absolute;
+    padding: 0 15px;
+}
+
+.newUpdateBrowserContainer .error-message-container {
+    padding-left: 62px;
+}
+
+.newUpdateBrowserContainer .error-message-container .message-text {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.newUpdateBrowserContainer .error-message-container .message-text > a {
+    font-weight: bold;
+    color: #000000;
+}
+
+.newUpdateBrowserContainer .error-message-container .message-text.error {
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.newUpdateBrowserContainer .browser-icon-container {
+    text-align: center;
+}
+
+.newUpdateBrowserContainer .browser-icon-container .browser-icon-element {
+    width: 40px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+#viewport {
+    min-width: 320px;
+}
+
+#liveSupport {
+    display: table;
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/login_live_support_mobile.png");
+    top: 30px;
+    right: 30px;
+    padding-right: 11px;
+    text-indent: 42px;
+}
+
+#liveSupport #firstLine {
+    display: none;
+}
+
+#liveSupport #secondLine {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.loginTitleMobile {
+    font-family: Helvetica, arial, verdana, sans-serif;
+    color: #08335e;
+    padding-left: 0;
+    padding-top: 52px;
+    padding-bottom: 33px;
+    background-color: #ffffff;
+    display: none;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+#helpInfoTipButton{
+    cursor: pointer;
+}
+
+#helpInfoToolTipContainer{
+    display: none;
+    height: auto;
+    width: 423px;
+    background-color: #ebebeb;
+    color: #535353;
+    line-height: 22px;
+    padding: 10px;
+    margin-bottom:20px;
+    margin-top: 10px;
+}
+
+#helpInfoToolTipContainer .arrow-up{
+    border-bottom-color: #EBEBEB;
+    position: absolute;
+    margin-top: -17px;
+}
+
+.tcknTabDesktop {
+    text-align: center;
+}
+
+.onlyDesktop {
+    display: block;
+}
+
+.onlyMobile {
+    display: none;
+}
+
+#Form1Div {
+    padding-bottom: 40px;
+}
+
+#formBottomLinksContainer .show-help-info {
+    display: none;
+}
+
+.login-tooltip-button {
+    height: 24px;
+    display: table-row;
+}
+
+.login-tooltip-button-image, .toolTipButtonText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nano > .nano-content {
+    padding-right: 0;
+}
+
+#resendCode, button.mobileSignatureButton {
+    margin-right: 10px;
+    width: 150px;
+    float: none;
+    padding: 15px;
+}
+
+.login-button {
+    margin-top: 10px;
+}
+
+.loginFormButtonHolder {
+    width: 443px;
+    margin-top: 28px;
+    text-align: right;
+}
+
+#_ctl0_MusNoText, #ParolaText, #phoneNumber, #welcomeMessage, #_ctl0_TxtTCKN, #_ctl0_TxtKart, #captcha {
+    width: 443px !important;
+}
+
+.ie10 #_ctl0_MusNoText, .ie10 #ParolaText, .ie10 #phoneNumber, .ie10 #welcomeMessage, .ie10 #_ctl0_TxtTCKN, .ie10 #_ctl0_TxtKart, .ie10 #captcha  {
+    width: 443px !important;
+}
+
+.loginFormButtonHolder .darkBlueButton, .tabsButtonContainer .darkBlueButton, .formButtonHolder .darkBlueButton {
+    height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .newUpdateBrowserContainer {
+        margin: 10px 10px 10px 0;
+    }
+
+    .api-container {
+        width: auto;
+    }
+
+    .api-container .api-logo {
+        width: 180px;
+        height: 35px;
+    }
+
+    .info-container {
+        margin-bottom: 15px;
+        width: auto;
+    }
+
+   .standardInput {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /*ie10*/
+    .ie10 #_ctl0_MusNoText, .ie10 #ParolaText, .ie10 #phoneNumber {
+        width: 100% !important;
+    }
+
+    #formBottomLinksContainer .show-help-info {
+        display: block;
+    }
+
+    .loginTitle {
+        display: none;
+    }
+
+    .loginTitleMobile {
+        display: block;
+    }
+
+    .loginInputContainer{
+        margin-bottom: 14px;
+        width: 100%;
+    }
+
+    .loginInputContainer .infoBlueBox {
+        display: none;
+    }
+
+    .ui-tooltip.loginPasswordInputTooltip {
+        top: 288px !important;
+        left: 227px !important;
+    }
+
+    #mainContent.loginMainContent .loginInputContainer .keyPadContainer {
+        right: 120px !important;
+        top: 110px;
+    }
+
+    #loginPageMiddlePartContainer .wideInput, #loginPageMiddlePartContainer .wideInput.info {
+        width: 100%;
+        box-sizing: border-box;
+        height: 40px;
+    }
+    
+    #mainContent {
+        min-width: 0;
+    }
+
+    .pageContainer {
+        min-width: 0;
+        padding-left: 227px;
+    }
+
+    .tabContentContainer {
+        width: 100%;
+    }
+
+    .nano {
+        position: relative;
+        height: auto;
+    }
+
+    .nano .nano-content {
+        position: relative;
+        height: auto;
+    }
+
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+        width: 80px;
+        height: 26px;
+    }
+
+    .tcknTabMobile {
+        display: block;
+        text-align: center;
+        list-style: none;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        border-bottom-width: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .onlyDesktop {
+        display: none;
+    }
+
+    .onlyMobile {
+        display: block;
+    }
+
+    #captchaElementsContainer {
+        padding-top: 15px;
+    }
+
+    #loginTypesContainer .ui-tabs .ui-tabs-panel {
+        padding-top: 20px;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    #Form1Div {
+        padding-right: 10px;
+    }
+
+    #forgotPassword {
+        padding: 0;
+        right: 10px;
+        top: 0;
+    }
+    
+    #_ctl0_subLogin01MusnoOtherSpan {
+        padding: 0;
+        right: 10px;
+        top: 0;
+    }
+    
+    #_ctl0_rememberContainer {
+        padding: 0;
+        right: 6px;
+        top: 0;
+    }
+
+    #loginFormBottomPartContainer {
+        width: 100%;
+    }
+
+    #logoContainer .isbank-header-logo {
+        margin-top: 34px;
+    }
+
+    #helpInfoTipButton {
+        cursor: pointer;
+        display: table-row;
+    }
+
+    #helpInfoTipButton img {
+        margin-top: 3px;
+    }
+
+    #helpInfoToolTipContainer, #securityToolTipContainer {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #formBottomLinksContainer {
+        padding-right: 10px;
+    }
+
+    #header {
+        min-width: 0;
+    }
+
+    #liveSupport {
+        display: table;
+        background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/login_live_support_mobile.png");
+        top: 44px;
+        right: 10px;
+        padding-right: 11px;
+        text-indent: 42px;
+    }
+
+    #liveSupport #firstLine {
+        display: none;
+    }
+
+    #liveSupport #secondLine {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .loginFormButtonHolder {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .formBottomLink {
+        margin-bottom: 14px;
+    }
+
+    .formBottomLink img{
+        vertical-align: middle;
+    }
+
+    .desktop-security-help {
+        display: none;
+    }
+
+    #securityToolTipContainer {
+        height: auto;
+    }
+    
+     .login-button, .resend-button {
+        width: 100%;
+        height: 47px;
+        text-align: right;
+    }
+
+    .login-button {
+        margin-top: 10px;
+    }
+    #_ctl0_MusNoText, #ParolaText, #phoneNumber, #welcomeMessage, #_ctl0_TxtTCKN, #_ctl0_TxtKart, #captcha {
+        width: 100% !important;
+    }
+    .ie10 #_ctl0_MusNoText, .ie10 #ParolaText, .ie10 #phoneNumber, .ie10 #welcomeMessage, .ie10 #_ctl0_TxtTCKN, .ie10 #_ctl0_TxtKart, .ie10 #captcha  {
+        width: 100% !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+    .newUpdateBrowserContainer {
+        margin: 10px;
+        padding-right: 30px;
+    }
+
+    .api-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .api-container .api-logo {
+        width: 160px;
+        height: 31px;
+    }
+
+    .api-container .api-text-container {
+        padding: 10px 0 0 0;
+    }
+
+    .info-container {
+        padding: 15px 10px;
+    }
+
+    .loginTitleMobile {
+        padding-left: 10px;
+        border-bottom: 1px solid #cecece;
+        padding-bottom: 22px;
+        padding-top: 22px;
+        margin-bottom: 22px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    #logoContainer {
+        display: none;
+    }
+
+    #liveSupport {
+        width: 32px;
+        padding-right: 3px;
+        top: 56px;
+    }
+
+    #liveSupport #secondLine {
+        display: none;
+    }
+
+    #Form1 {
+        padding: 0;
+    }
+    
+     #Form1Div 
+     {
+         padding-right : 0;
+     }
+    
+    #formBottomLinksContainer {
+        padding: 0 10px;
+    }
+
+    #loginFormBottomPartContainer {
+        padding-bottom: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .ui-tooltip.loginPasswordInputTooltip {
+        max-width: 300px;
+    }
+
+    .ui-tooltip.loginPasswordInputTooltip .toolTipContent p {
+        font-size: 80%;
+    }
+
+    #securityToolTipContainer {
+        height: auto;
+    }
+
+    .nano > .nano-content {
+        padding-right: 0;
+    }
+
+    #loginTypesContainer #tabs {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+        padding: 10px 10px;
+        width: 100%;
+        height: 46px;
+        box-sizing: border-box;
+    }
+
+    .ui-tabs .ui-tabs-nav li {
+        min-width: 93px;
+        max-width: 130px;
+        width: 20%;
+        margin-right: 10px;
+    }
+
+    .ui-tabs .ui-tabs-nav li:last-child {
+        margin-right: 0;
+    }
+
+    .ui-tabs .ui-tabs-nav{
+        padding: 0;
+    }
+
+    .pageContainer {
+        padding-left: 0;
+    }
+
+    .ui-tooltip.loginPasswordInputTooltip {
+        left: 10px !important;
+        top: 308px !important;
+    }
+
+    input.ui-button, button.ui-button {
+        width: 100%;
+    }
+
+    #securityToolTipContainer {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #mainContent {
+        padding-bottom: 140px;
+    }
+
+    #mainContent.loginMainContent {
+        min-height: 0;
+        height: auto;
+    }
+
+    #mainContent.loginMainContent .loginInputContainer .keyPadContainer {
+        display: none !important;
+    }
+    
+    .login-button, .resend-button {
+        width: 100%;
+        height: 47px;
+        text-align: right;
+    }
+
+    #resendCode, .mobileSignatureButton {
+        width: 100%;
+    }
+
+    .contactUsContainer {
+        padding-left: 0;
+    }
+}

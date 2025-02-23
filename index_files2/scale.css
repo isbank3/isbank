@@ -1,0 +1,170 @@
+@media only screen and (max-width: 1366px) {
+    #loginFormBottomPartContainer {
+        width: 500px;
+    }
+
+    .tabContentContainer {
+        width: 500px;
+    }
+
+    #loginPageMiddlePartContainer .wideInput.info {
+        width: 443px;
+    }
+
+    #pageContent {
+        width: 478px;
+    }
+
+    #stepTableContainer table {
+        width: 480px;
+    }
+
+    #pageContent .wideInput.info {
+        width: 421px;
+    }
+
+    #mobileCodeBottomButtonsContainer input.ui-button,
+    #mobileCodeBottomButtonsContainer button.ui-button {
+        padding: 15px 5px;
+    }
+
+    #rememberMeContentHolder {
+        width: 400px;
+    }
+
+    .ui-tooltip.loginPasswordInputTooltip {
+        width: 344px !important;
+        left: 336px !important;
+    }
+
+    .ui-tooltip {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+    .pageContentIPadPortrait {
+        width: 415px !important;
+    }
+
+        .pageContentIPadPortrait #timerContainerTd {
+            width: 120px;
+        }
+
+        .pageContentIPadPortrait #timerCanOtpApproveByDiyalogContainerTd {
+            width: 120px;
+        }
+
+        .pageContentIPadPortrait #timerCustomerCanLoginBySealContainerTd {
+            width: 120px;
+        }
+
+    /*on ipad, input fields has default
+        padding: 0.2em 0.5em 0.3em 0.5em
+        -webkit-appearance: textfield
+        border-radius: 5px
+     */
+
+    #loginPageMiddlePartContainer .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    #pageContent .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    .loginInputContainer .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+}
+
+/* iphone 5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    #loginPageMiddlePartContainer .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    #pageContent .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    .loginInputContainer .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    .ui-tooltip.loginPasswordInputTooltip .toolTipContent p {
+        font-size: 60%;
+        line-height: 120%;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #loginPageMiddlePartContainer .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    #pageContent .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    .loginInputContainer .wideInput {
+        padding: 1px;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    .ui-tooltip.loginPasswordInputTooltip .toolTipContent p {
+        font-size: 60%;
+        line-height: 120%;
+    }
+}
+
+@media only screen and (max-width: 1149px) {
+
+    .iframeDashboardContainer {
+        height: 1115px !important;
+    }
+
+        .iframeDashboardContainer iframe {
+            height: 1115px !important;
+        }
+}
+
+@media all and (min-height: 1076px) {
+
+    .popUpContainer {
+        margin-top: 250px;
+    }
+}
+
+@media all and (min-height: 901px) and (max-height: 1075px) {
+
+    .popUpContainer {
+        margin-top: 100px;
+    }
+}
+
+@media all and (min-height: 1px) and (max-height: 900px) {
+
+    .popUpContainer {
+        margin-top: 30px;
+    }
+}

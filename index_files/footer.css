@@ -1,0 +1,141 @@
+#languageFlagSelect {
+    display: none;
+}
+
+#symantec-logo {
+    vertical-align: bottom;
+}
+
+#languageFlagSelect {
+    width: 60px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#languageFlagSelect img {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -4px;
+}
+
+#languageFlagSelect .isbank-page-language {
+    vertical-align: middle;
+    text-align: right;
+    display: none;
+}
+
+#languageFlagSelect .selected-language {
+    display: block;
+}
+
+#mainContent.loginMainContent {
+     min-height: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #mainContent {
+        padding-bottom: 0;
+    }
+
+    #footer {
+        position: relative;
+        padding-bottom: 35px;
+    }
+
+    #footer #content {
+        margin-left: 227px;
+    }
+
+    #footer #content #left .container {
+        margin-left: 0;
+    }
+
+    #symantec-logo {
+        display: inline-block;
+    }
+
+    #footer #content #left {
+        width: 60%;
+    }
+
+    #footer #content #right {
+        width: 40%;
+    }
+
+    #footer #content #right .container {
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+
+    #copyRightContainer {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 4px;
+    }
+
+    .footerLinks {
+        color:  #329ce0;
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 0;
+
+    }
+
+    .languageContainer {
+        padding-left: 20px;
+    }
+
+    .footerLinks a {
+        vertical-align: middle;
+    }
+
+    #languageSelect {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #footer #content {
+        margin-left: 0;
+    }
+
+    #footer {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    #footer #content #left {
+        position: absolute;
+        top: 40px;
+        width: inherit;
+        padding-bottom: 35px;
+    }
+
+    #footer #content #left .container img {
+        margin-right: 15px;
+    }
+
+    #footer #content #right  {
+        border-top: 1px solid #cecece;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        width: inherit;
+    }
+
+    #footerLinksContainer {
+        float: none;
+    }
+
+    #footer #content #left .container, #footer #content #right .container {
+        border: none;
+    }
+
+    #copyRightContainer {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,2751 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: helvetica, arial, verdana, sans-serif;
+    color: #ffffff;
+    background-image: none;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+
+a {
+    cursor: pointer;
+}
+
+.isweb-button-old{
+    border: none;
+    border-spacing: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    margin-right: 0;
+}
+
+input {
+   border: 1px solid #D3D3D3;
+    color: #52565c;
+    font-size: 14px;
+}
+
+input:hover {
+    border: 1px solid #94d3e2;
+    color: #52565c;
+}
+
+input:focus, input:active {
+    border: 1px solid #3CB1CD;
+    color: #52565c;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input:disabled {
+    background: #e4e4e4;
+    border: 1px solid #CECECE;
+}
+
+input:disabled.width40 {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/disabled_dot.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#viewport {
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    min-width: 980px;
+}
+
+#header {
+    position: absolute;
+    min-width: 980px;
+    height: 100px;
+    width: 100%;
+}
+
+#mainContent {
+    padding-bottom: 100px;
+    min-width: 980px;
+    width: 100%;
+    padding-top: 0;
+    z-index: 100;
+    min-height: 510px;
+}
+#mainContent.loginMainContent {
+    min-height: 600px;
+}
+
+#mainContent2 {
+    padding-bottom: 100px;
+    min-width: 980px;
+    width: 100%;
+    padding-top: 50px;
+    z-index: 100;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    color: #49A5E0;
+    text-align: center;
+    font-size: 12px;
+    min-height: 50px;
+    z-index: 20;
+    padding-bottom: 20px;
+}
+
+#footer #content{
+    margin-left: 305px;
+    height: 100%;
+    width: auto;
+    text-align: left;
+
+}
+
+@media only screen and (max-width: 768px) {
+    body #footer #content {
+        margin-left: initial;
+        margin-right: initial;
+    }
+}
+
+#footer #content #left,
+#footer #content #right{
+    display: block;
+    float: left;
+    width: 50%;
+}
+#footer #content #left .container,
+#footer #content #right .container{
+    border-top: 1px solid #cecece;
+    padding-top: 20px;
+}
+
+
+#footer #content #left .container{
+    margin-left: 30px;
+}
+#footer #content #right .container{
+    margin-right: 30px;
+
+}
+
+
+
+#footer #content #left .container img{
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+
+#bg_gradient {
+    height: 162px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(https://www.isbank.com.tr/Internet/Omni/assets/img/bg_gradient.png);
+    background-repeat: repeat-x;
+    z-index: -1;
+}
+
+#copyRightContainer {
+    color: #afb0b1;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+
+#sslCertificateImgContainer {
+    position: absolute;
+    border-bottom: 0;
+    text-align: left;
+    padding-left: 305px;
+    width: auto;
+    text-indent: 30px;
+    z-index: 1;
+}
+
+#leftBannerContainer{
+    position: absolute;
+    background-color: #ffffff;
+    width:305px;
+    height: 100%;
+    /* OMNI */
+    /*background-image: url("https://www.isbank.com.tr/intsube_Resim/Reklamlar/z5z6/banner.jpg");*/
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.formBottomLink{
+    color: #49A5E0;
+    line-height: 24px;
+}
+
+.formBottomLink img{
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+#securityToolTipButton{
+    cursor: pointer;
+    display: table-row;
+    width: auto;
+}
+#securityToolTipContainer{
+    display: none;
+    width: 429px;
+    height: 180px;
+    background-color: #ebebeb;
+    color: #535353;
+    line-height: 22px;
+    padding: 10px;
+    margin-bottom:20px;
+    margin-top: 10px;
+}
+#securityToolTipContainer .nano{
+
+}
+
+
+.contentBoxContainer {
+    width: 100%;
+    min-height: 430px;
+}
+
+.contentBoxContainer .contentBox {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.contentBoxContainer #securityQuestionMark {
+    width: 44px;
+    height: 44px;
+    display: none;
+    vertical-align: top;
+    background-color: #ffffff;
+    margin-left: 15px;
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/home_help_icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.pageContainer {
+    padding-left: 335px;
+    min-width: 600px;
+}
+.pageContainer.error {
+    padding-left: 0;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pageContainer.error #pageContent{
+    width: 100%;
+}
+
+#footer #content.error{
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer #content.error #left .container{
+    margin-left: 0;
+}
+#footer #content.error #right .container{
+    margin-right: 0;
+}
+
+
+
+.placeholder {
+    color: #A7A9AC !important;
+}
+
+::-webkit-input-placeholder {
+    color: #A7A9AC !important;
+}
+
+input:-ms-input-placeholder {
+    color: #A7A9AC !important;
+}
+
+#loginTypesContainer {
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}
+
+#securityDetailContainer {
+    background-color: white;
+    margin-left: 15px;
+    height: 500px;
+}
+
+.loginTitle {
+    font-family: Helvetica, arial, verdana, sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 34px;
+    color: #08335e;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+}
+
+/*.loginTitle .bold {*/
+.bold {
+    font-family: Helvetica, arial, verdana, sans-serif;
+    font-weight: 600;
+}
+
+.loginInputContainer {
+    margin-bottom: 15px; /*OMNI*/
+}
+
+.loginInputContainer.bottom10 {
+    margin-bottom: 10px;
+}
+
+.formButtonHolder #noPassword {
+    float: left;
+}
+
+.formButtonHolder #noPassword a {
+    color: #49A5E0;
+    line-height: 20px;
+}
+
+#loginFormBottomPartContainer {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding: 0 30px 30px;
+    padding-left: 0;
+    width: 500px;
+}
+.forgotInputText #forgotPassword{
+    right: 55px;
+    padding-right: 25px;
+    margin-left: 0px !important;
+}
+.musnoOtherInputText #subLogin01MusnoOtherSpan{
+    right: 55px;
+    padding-right: 25px;
+    margin-left: 0px !important;
+}
+
+.wideInput {
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 15px !important;
+    width: 100%;
+}
+
+.standardInput {
+    height: 42px;
+    box-sizing: border-box;
+    padding-left: 15px !important;
+    width: 443px;
+}
+
+#loginPageMiddlePartContainer .wideInput.info {
+    width: 443px;
+}
+
+#pageContent .wideInput.info {
+    width: 521px;
+}
+
+#pageContent .wideInput.info.iframe {
+    width: 455px;
+}
+
+#pageContent.wide {
+    width: 645px;
+}
+
+#loginTypesContainer #tabs {
+
+}
+
+.tabExp {
+    color: #434343;
+    padding-top: 10px;
+}
+
+.tabExp.paddingBottom {
+    padding-bottom: 15px;
+}
+
+.formButtonHolder {
+    margin-top: 28px;
+    width: 100%;
+    text-align: right;
+    min-height: 50px;
+}
+
+.formButtonHolder.right {
+    text-align: right;
+}
+
+.formButtonHolder.left {
+    text-align: left;
+}
+
+.formButtonHolderAlignText {
+    padding-left: 48px;
+}
+
+.orangeButton {
+    background-color: #F34608;
+    color: #FFFFFF;
+}
+
+.orangeButton:hover {
+    background-color: #F95419;
+
+}
+
+.orangeButton:active {
+    background-color: #D13F0B;
+
+}
+
+.orangeButton:disabled,.darkBlueButton:disabled{
+    background-color:  #cecece;
+    color: #9e9e9e;
+    text-shadow: 0 1px 0  #e4e4e4;
+    font-weight: bold;
+    cursor: auto;
+}
+
+
+
+.darkBlueButton {
+    background-color: #08335E;
+    color: #FFFFFF;
+}
+.lightBlueButton {
+    background-color: #27A9D9;
+    color: #FFFFFF;
+}
+.darkBlueLink {
+    font-size: 14px;
+    font-weight: bold;
+    color: #08335E;
+}
+
+
+#loginTypesContainer .ui-tabs .ui-tabs-panel {
+    padding: 30px 0 0 0;
+    margin-right: 30px;
+}
+
+#Form1 {
+    height: 100%;
+}
+
+
+#securityHeadContainer {
+    line-height: 69px;
+    padding-left: 30px;
+}
+
+#closeSecurityDetailContainer {
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+}
+
+#securityInfoContainer {
+    color: #6C6C6C;
+}
+
+#contentBoxBottomLinksContainer {
+    width: 100%;
+}
+
+.contentBoxBottomLink {
+    display: table-cell;
+    padding: 20px 30px 20px 0;
+}
+
+.contentBoxBottomLink a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#footerLinksContainer {
+    float: right;
+    position: relative;
+    line-height: 45px;
+    z-index: 2;
+}
+
+.footerLinks {
+    display: table-cell;
+    padding: 0;
+    text-align: left;
+}
+
+.footerLinks.last {
+    padding-right: 0;
+}
+
+.customSelect {
+    height: 37px;
+    overflow: hidden;
+    border-top: 1px solid #FFFFFF;
+    width: 110px;
+}
+
+.customSelect li {
+    border: 1px solid #ffffff;
+    border-top: none;
+}
+
+#logoContainer {
+    background-color: #08335E;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 112px;
+    text-align: center;
+    width: 58px;
+    cursor: pointer;
+}
+
+#logoContainer img {
+    margin-top: 48px;
+}
+
+#liveSupport {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/login_live_support.png");
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    border: 1px solid #bababa;
+    color: #08335E;
+    padding: 3px 30px 3px 3px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    height: 32px;
+    text-indent: 38px;
+}
+
+#liveSupport #firstLine{
+    font-size: 10px;
+    font-weight: bold;
+    color: #bababa;
+    line-height: 16px;
+}
+
+#liveSupport #secondLine{
+    font-weight: bold;
+    color: #08355e;
+}
+
+#headerContainer {
+    min-height: 300px;
+}
+
+#pageContent {
+    background-color: #ffffff;
+    width: 578px;
+    margin-bottom: 30px;
+}
+
+.contentTitle {
+    font-family: Helvetica, arial, verdana, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3B3F43;
+    padding-left: 0;
+    padding-top: 30px;
+    width: 80%;
+}
+
+.contentTitle.paddingBottom {
+    padding-bottom: 30px;
+}
+
+#pageContentDesc {
+    padding: 20px;
+    padding-left: 0;
+    color: #3B3F43;
+    line-height: 18px;
+}
+
+#pageContentDesc.white{
+    color: #ffffff;
+}
+
+#pageContentDesc #endSession {
+    color: #38C0EC;
+    /*cursor: pointer;*/ /*omni*/
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+#pageContentDesc.white #endSession{
+    color: #38c0ec;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#pageContentDesc.white #endSession span{
+    border-bottom: 1px solid;
+}
+
+#pageContentDesc #endSession span{
+    border-bottom: 1px solid;
+}
+
+
+
+.contentExpContainer {
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-size: 14px;
+    padding: 20px 20px 0;
+    padding-left: 0;
+    line-height: 18px;
+    color: #3B3F43;
+}
+
+#stepTableContainer {
+    padding: 30px 0 0;
+}
+
+#stepTableContainer table {
+    width: 580px;
+    border-bottom: 2px solid #49a5e0;
+}
+
+#stepTableContainer table td {
+    background-color: #ececec;
+    border-right: 1px solid #ffffff;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    width: 50px;
+}
+
+#stepTableContainer #selected {
+    background-color: #49a5e0;
+    color: #ffffff;
+    border: none;
+}
+
+#stepTableContainer #stepTitle {
+    background-color: #4199d1;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    width: auto;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+.noBorder {
+    border: none !important;
+}
+
+#pageContent #formContainer {
+    background-color: #FFFFFF;
+    padding: 40px 0 30px 0px;
+    color: #767676;
+}
+
+#pageContent #formContainer.iframe {
+    background-color: #FFFFFF;
+    padding: 0;
+    color: #767676;
+    width: 510px;
+}
+
+#pageContent .mobileSignatureContainer {
+    color: #3B3F43;
+}
+
+#pageContent #formContainer.top0{
+    padding-top: 0;
+}
+
+#pageContent #formContainer ul {
+    list-style: disc inside none;
+    margin-bottom: 15px;
+}
+
+#pageContent #formContainer p {
+    margin-bottom: 15px;
+}
+
+
+.inputLabel {
+    color: #434343;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.inputDesc {
+    font-family: Helvetica Neue, Helvetica, Arial, verdana, sans-serif;
+    padding-bottom: 10px;
+    color: #434343;
+    line-height: 17px;
+}
+
+.inputDesc.error{
+    color: red;
+    font-size: 16px;
+    line-height: 24px;
+    background-image: url('https://www.isbank.com.tr/Internet/Omni/assets/img/error_icon.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 50px;
+    text-align: justify;
+}
+
+.inputDesc.info{
+    color: #08335E;
+    font-size: 16px;
+    line-height: 24px;
+    background-image: url('https://www.isbank.com.tr/Internet/Omni/assets/img/info_icon.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 50px;
+    text-align: justify;
+}
+
+.inputDesc.paddingBottom {
+    padding-bottom: 30px;
+}
+
+.toolTipContent {
+    padding: 20px;
+}
+
+.toolTipContent.first {
+    padding-bottom: 0
+}
+
+.toolTipContent.last {
+    padding-top: 0;
+}
+
+
+.formCell {
+    display: table-cell;
+    vertical-align: top;
+    width: 281px;
+}
+
+.width40 {
+    width: 40px !important;
+    margin-right: 5px;
+}
+
+.width40.last {
+    margin-right: 0;
+}
+
+.formRow {
+}
+
+.formRow #passwordInfo {
+    background-color: rgba(228, 228, 228, 0.4);
+    color: #838383;
+    padding: 15px;
+    line-height: 20px;
+    margin-bottom: 28px;
+}
+
+#pageContent .pageHeadInfo {
+    width: 100%;
+
+}
+
+.pageHeadInfo  .infoText {
+    padding: 15px;
+    color: #73724E;
+    background-color: #fffee6;
+    border: 1px solid #eae8c4;
+    margin-bottom: 30px;
+}
+
+#pageContent.webSecurityContent #formContainer{
+    padding-top: 0;
+}
+
+
+.formRow #passwordInfo .dark, .webSecurityContent .dark {
+    color: #2d363f;
+}
+
+.formCell.lastCell {
+    padding-left: 15px;
+}
+
+.loginInputContainer .wideInput, .loginInputContainer .infoBlueBox,
+.formInputContainer .wideInput, .formInputContainer .infoBlueBox {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.formInputContainer.marginBottom {
+    margin-bottom: 28px;
+}
+
+.infoBlueBox {
+    width: 44px;
+    height: 42px;
+    background-color: #fafafa;
+    margin-left: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.infoQuestionMark {
+    background-image: url(https://www.isbank.com.tr/Internet/Omni/assets/img/information_icon.png);
+}
+
+.infoBlueBox.refresh {
+    background-image: url(https://www.isbank.com.tr/Internet/Omni/assets/img/refresh_icon.png);
+    cursor: pointer;
+}
+
+.accordionLinkContainer {
+    margin-top: 30px;
+}
+
+#securityDetailContainer .accordionLinkContainer {
+    color: #ffffff;
+    background-color: #27A9D9;
+    padding: 4px 8px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.forgotInputText {
+    color: #49A5E0;
+    line-height: 45px;
+    margin-left: -80px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.clearRemembermusno {
+    color: #49A5E0;
+    line-height: 45px;
+    margin-left: -20px;
+    margin-top : 7px;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(https://www.isbank.com.tr/Internet/Omni/assets/img/icon_x_text.png);
+    background-repeat:no-repeat;
+    width:15px;
+    height:15px;
+}
+
+
+.musnoOtherInputText {
+    color: #49A5E0;
+    line-height: 45px;
+    margin-left: -92px;
+    margin-top: 7px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#contentBoxBottomLinksInfo {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+#contentBoxBottomLinksInfo img {
+    vertical-align: middle;
+}
+
+.loginErrorContainer {
+    border: 1px solid #FAD5D5;
+    background-color: #FCF0F0;
+    color: #F40C38;
+    padding: 15px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    width: 465px;
+    display: none;
+}
+
+.cookieDisabled {
+    background-color:#fdf3ab !important;
+    color: #000000 !important;
+}
+
+.loginErrorContainer .errorSymbol, .loginErrorContainer .errorText {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.loginErrorContainer .errorSymbol {
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.inputBottomErrorContainer {
+    background-image: url(https://www.isbank.com.tr/Internet/Omni/assets/img/error_icon_small.png);
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 25px;
+    color: #F40C38;
+    line-height: 20px;
+    display: none;
+}
+
+.inputHasError, .inputHasError:hover, .inputHasError:focus, .inputHasError:active {
+    border: 1px solid #F40C38 !important;
+}
+
+#tabs {
+    color: #000000;
+}
+
+#tabs4 p {
+    padding: 10px 0;
+}
+
+#fingerPrint {
+    font-weight: bold;
+}
+
+#captchaContainer.loginCaptcha{
+    /*margin-top: -15px;*/ /*OMNI*/
+
+}
+/* OMNI
+#captchaElementsContainer,
+#telephoneElementsContainer{
+    display: none;
+}*/
+
+#loginCaptchaInputContainer input {
+    width: 443px;
+}
+
+#captchaContainer div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#captchaImgContainer {
+    height: 42px;
+    width: 200px;
+    border: 1px solid #D3D3D3;
+    margin-bottom: 15px;
+    background-color: #D3D3D3;
+}
+
+.webSecurityContent {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+.checkBoxLabel {
+    color: #2d363f;
+}
+
+#userChooserContainer {
+    margin-bottom: 15px;
+}
+
+.userAvatar {
+    background-color: #08335E;
+    height: 60px;
+    margin-right: 20px;
+    width: 60px;
+}
+
+.popupOverLay {
+    position: fixed;
+    overflow: auto;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+}
+
+.popUpContainer {
+    background-color: #ffffff;
+    color: #535353;
+    width: 550px;
+    margin: 30px auto 50px;
+}
+
+.popUpHeaderContainer {
+    border-bottom: 1px solid #EBEBEB;
+    padding: 27px;
+}
+
+.popUpHeaderContainer .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #08335e;
+}
+
+.popUpCloseButton {
+    float: right;
+    cursor: pointer;
+}
+
+.popUpBodyContainer {
+    padding: 20px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.popUpFooterContainer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #dddddd;
+    min-height: 46px;
+}
+
+.popUpFooterContainer.iframe {
+    position: absolute;
+    width: 510px;
+    bottom: 0;
+}
+
+
+.popUpFooterContainer.iframe a{
+    padding: 16px 40px;
+    text-align: center;
+    margin-right: 0;
+    font-weight: normal;
+}
+
+.popUpBodyContainer .loginInputContainer {
+    margin-bottom: 15px;
+}
+.popUpBodyContainer .inputLabel {
+    padding-bottom: 5px;
+}
+
+.popUpQuestion {
+    margin-top: 20px;
+    color: #464646;
+}
+
+.popUpContainer .formCell {
+    vertical-align: top;
+}
+
+#mobileCodeBottomButtonsContainer{
+    width: 100%;
+    height: 60px;
+}
+#mobileCodeBottomButtonsContainer td{
+    vertical-align: middle;
+}
+#timerContainerTd{
+    width: 50px;
+}
+#timerCanOtpApproveByDiyalogContainerTd{
+    width: 50px;
+}
+#timerCustomerCanLoginBySealContainerTd {
+    width: 50px;
+}
+
+#timer{
+    height: 55px;
+    width: 55px;
+    float: right;
+    color: #08335E;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#timerCanOtpApproveByDiyalog{
+    height: 55px;
+    width: 55px;
+    float: right;
+    color: #08335E;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#timerCustomerCanLoginBySeal {
+    height: 55px;
+    width: 55px;
+    float: right;
+    color: #08335E;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.tabContentContainer{
+    width: 500px;
+}
+.nano-content p{
+    margin-top: 10px;
+}
+
+.loginPasswordLabel{
+    padding-top: 10px;
+}
+
+.ie8-9Only{
+    display: none;
+}
+.errorTitle{
+    color: #08335E;
+    font-weight: 300;
+    font-family: Helvetica, arial, verdana, sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+.ui-button.lightBlueButton.error.left{
+    margin-left: 50px;
+}
+
+#updateBrowserInfoContainer{
+    position: relative;
+    background-color: #fdf3ab;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    display: none;
+    height: auto;
+    padding: 0 25px 0 40px;
+    min-height: 40px;
+}
+
+#updateBrowserInfoElement {
+    padding: 10px 0;
+}
+
+#updateBrowserInfoWarning {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#updateBrowserInfoContainer #close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#updateBrowserInfoContainer a{
+    color: #019cff;
+    text-decoration: underline;
+}
+
+.blockScroll{
+    overflow: hidden;
+}
+
+
+#secureMenuContainer #secureContent .iframeContainer#iframeContainer,
+#secureMenuContainer #secureContent .normal#leftContainer{
+    width: 960px;
+    background-color: #ffffff;
+    float: left;
+    min-height: 500px;
+    margin-top: 40px;
+    color: #434343;
+}
+
+#secureMenuContainer #iframeContainer iframe{
+    height: 100%;
+    width: 100%;
+}
+.withDatePickerIcon{
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/calendar_icon.png");
+    background-repeat: no-repeat;
+    background-position: 96% center;
+}
+
+.iFramePopupCloseButton{
+    position: absolute;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.popUpContainer iframe{
+    width: 100%;
+    min-height: 620px;
+}
+
+
+/*jquery-ui*/
+
+.ui-tabs {
+    padding: 0;
+}
+
+
+
+.ui-tabs .ui-tabs-panel {
+    background-color: #fff;
+    color: #434343;
+    padding-left: 0;
+    border-top: 2px solid #49A5E0;
+
+}
+
+.ui-tabs .ui-tabs-nav li {
+    background-color: #FAFAFA;
+    margin-bottom: 0;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    color: #000000;
+    line-height: 24px;
+    padding: 10px 25px;
+    text-align: center;
+    width: 108px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background-color: #ffffff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.secondFactorTabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.secondFactorTabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    width: auto;
+}
+.secondFactorTabs.ui-tabs .ui-tabs-nav li{
+    margin-right: 10px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    color: #ffffff;
+    background-color: #49A5E0;
+}
+
+.ui-tabs .ui-tabs-nav {
+    padding-left: 0;
+    padding-right: 15px;
+    background-color: #ffffff;
+}
+
+.secondFactorPageContent .ui-tabs .ui-tabs-nav {
+    padding-left: 0;
+}
+
+.secondFactorButton {
+    margin-right: 10px;
+}
+
+.mobileSignatureButton {
+    padding: 15px 40px !important;
+}
+
+
+.ui-tabs .ui-tabs-nav li {
+    margin-right: 15px;
+}
+
+input.ui-button, button.ui-button {
+    padding: 15px 40px;
+    text-align: center;
+    margin-right: 0;
+    font-weight: normal;
+}
+
+.ui-button.right {
+    float: right;
+}
+.ui-button.left{
+    float: left;
+}
+
+.ui-accordion .ui-accordion-header {
+    border-top: 1px solid #E3E3E3;
+    border-bottom: transparent;
+    color: #08335E;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    line-height: 43px;
+}
+
+.whiteBackGround {
+    background-color: #ffffff !important;
+}
+
+.ui-accordion .ui-accordion-header.prevHeader {
+    border-bottom: 1px solid transparent;
+}
+
+.ui-accordion .ui-accordion-header:after {
+    content: url("https://www.isbank.com.tr/Internet/Omni/assets/img/accordion_positive.png");
+    float: right;
+    font-size: 15px;
+    padding-right: 30px;
+    color: #C4C4C4;
+}
+
+.ui-accordion  .ui-accordion-header-active {
+    background-color: #F1F1F1;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid #cecece;
+}
+
+.ui-accordion  .ui-accordion-header-active:after {
+    content: url("https://www.isbank.com.tr/Internet/Omni/assets/img/accordion_negative.png");
+}
+
+
+.ui-accordion .ui-accordion-content {
+    padding: 0 30px 10px 30px;
+    color: #535353 !important;
+    line-height: 22px;
+    border-bottom: 1px solid transparent;
+}
+
+.customScroll.ui-accordion .ui-accordion-content{
+    padding: 0 5px 0 30px;
+}
+
+.ui-accordion .ui-accordion-content-active {
+    background-color: #F1F1F1;
+    border-bottom: 1px solid transparent;
+}
+
+.ui-selectable .ui-selectee {
+    padding: 10px;
+}
+
+.ui-tooltip {
+    background-color: #ffffff;
+    color: #7B7B7B;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    box-shadow: 0 0 5px rgba(52, 52, 52, 0.48);
+    max-width: 360px;
+}
+
+.ui-tooltip.loginPasswordInputTooltip{
+    max-width: 444px;
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/login_password_information.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-indent: 35px;
+    border-top: 1px solid #dbdbdb;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
+    width: 444px !important;
+    /*display:none !important;
+    	kontrol et
+    */
+}
+
+.ui-tooltip.loginPasswordInputTooltip .toolTipContent{
+    padding: 10px;
+    color: #535353;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-bottom: 10px solid black;
+}
+
+#securityToolTipContainer .arrow-up{
+    border-bottom-color: #EBEBEB;
+
+    position: absolute;
+    margin-top: -17px;
+}
+
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -23px;
+}
+
+.leftArrow {
+    bottom: -16px;
+    height: 16px;
+    left: -2%;
+    margin-left: -35px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    tranform: rotate(90deg);
+}
+
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+
+.arrow.left {
+    left: 10%;
+}
+
+.arrow:after, .leftArrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 21px;
+    height: 21px;
+    box-shadow: 6px 5px 9px -9px black;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+}
+
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+
+#rememberMeContentHolder {
+    padding: 40px 30px 30px 0;
+    width: 500px;
+}
+
+
+#userChooserContainer .userAvatar,
+#userChooserContainer .userName,
+.userSelect .userAvatar,
+.userSelect .userName {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#userChooserContainer .select2-container .select2-choice .select2-arrow{
+    width: 40px;
+}
+
+#userChooserContainer .userName,
+.userSelect .userName {
+    font-weight: bold;
+    font-size: 16px;
+    color: #08335e;
+}
+
+.userSelect.select2-drop-active {
+    border: none;
+    border-radius: 0;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 1px;
+}
+
+.select2-results {
+    max-height: 310px;
+    padding: 0;
+    margin: 0;
+    line-height: 16px;
+    text-indent: 4px;
+    color: #434343
+}
+.footerDropDown .select2-results{
+    color: #ffffff;
+}
+
+
+.footerDropDown .select2-results li{
+    border: none;
+    line-height: 14px;
+}
+
+.select2-results li{
+    border: 1px solid #CECECE;
+    border-top: none;
+    line-height: 42px;
+}
+
+.select2-results .select2-highlighted{
+    background-color: #f0f0f0;
+    color: #434343;
+
+}
+
+.userSelect .select2-results {
+    padding: 0;
+    border-radius: 0;
+    max-height: 300px;
+}
+
+.userSelect .select2-results li {
+    border-bottom: 1px solid #cecece;
+    background-color: inherit;
+}
+
+.userSelect .select2-results .select2-result-label {
+    padding: 5px;
+}
+
+.userSelect .select2-results .select2-highlighted {
+    background-color: inherit;
+}
+
+.userSelect .deleteUserIconContainer {
+    display: inline-block;
+    background-color: #CECECE;
+    float: right;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background-image: url(https://www.isbank.com.tr/Internet/Omni/assets/img/select_user_delete.png);
+    text-indent: 20px;
+    line-height: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.userSelect .deleteUserIconContainer.active {
+    width: 130px;
+    background-color: #08335e;
+}
+
+.userSelect .deleteUserIconContainer img {
+    vertical-align: middle;
+}
+
+.carousel_box iframe{
+    width: 580px;
+    height: 76px;
+}
+
+
+/*jquery-ui*/
+
+/*keypad*/
+
+.keyPadContainer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 2px #6C6C6C;
+    left: 925px;
+    margin-top: -65px;
+    padding: 10px;
+    position: absolute;
+    color: #C8CFD5;
+    z-index: 100;
+    display: none;
+    min-width: 183px;
+}
+
+#keyPadSubInfo {
+    color: #BAC3CB;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#keyPadSubInfo a:hover {
+    text-decoration: underline;
+}
+
+.keypad-key, .keypad-special {
+    font-family: helvetica, arial, verdana, sans-serif;
+    background-color: #ADB5BD;
+    width: 60px;
+    height: 40px;
+}
+
+.keypad-key.keypad-key-down {
+    background-color: #9DA8B3
+}
+
+.keypad-delete {
+    background-color: #49A5E0;
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/numpad_delete.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.keypad-shuffle {
+    background-color: #49A5E0;
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/numpad_random.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.keypad-shuffle.keypad-key-down,
+.keypad-delete.keypad-key-down {
+    background-color: #219BC3
+}
+
+/*keypad*/
+
+/*select2*/
+
+.select2-container .select2-choice {
+    background: none;
+    border: 1px solid #D3D3D3;
+    border-radius: 0;
+    box-shadow: none;
+    color: #444444;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    filter: none;
+}
+
+.select2-dropdown-open.select2-drop-above .select2-choice ,
+.select2-dropdown-open.select2-drop-above .select2-choices{
+    background-image:none;
+    border-radius: 0;
+    border: 1px solid #D3D3D3;
+}
+.select2-drop.select2-drop-above.select2-drop-active{
+    border-top: 1px solid #D3D3D3;
+}
+
+
+
+
+.select2-container .select2-choice:hover{
+    border: 1px solid #94d3e2;
+}
+
+.select2-container .select2-choice:focus{
+    border: 1px solid #3CB1CD;
+}
+
+.select2-drop .select2-display-none
+.standardDropDown .select2-with-searchbox {
+    display: none;
+}
+
+#footer .select2-container .select2-choice {
+    background-color: #ffffff;
+    border: 1px solid #49A5E0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #49A5E0;
+    height: 23px;
+    line-height: 23px;
+}
+
+#footer .select2-container .select2-choice:hover{
+
+}
+#footer .select2-container .select2-choice:active{
+
+}
+
+
+.standardDropDown {
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+
+.footerDropDown {
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: none;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+#userChooserContainer .select2-container .select2-choice {
+    height: 60px;
+    padding: 5px;
+}
+
+.footerDropDown .select2-results li {
+    font-size: 12px;
+    color: #49A5E0;
+}
+
+.footerDropDown .select2-results .select2-highlighted {
+    background: none;
+    color: #49A5E0;
+}
+
+.footerDropDown.select2-drop.select2-drop-active {
+    border: 1px solid #49A5E0;
+    color: #49A5E0;
+}
+
+.footerDropDown.select2-dropdown-open .select2-choice {
+    border: 1px solid #ffffff;
+}
+
+#footer .select2-container .select2-choice {
+    filter: none;
+}
+
+.footerDropDown.select2-drop {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+.select2-container .select2-choice .select2-arrow,
+.select2-dropdown-open .select2-choice .select2-arrow {
+    background: none;
+    border: none;
+    filter: none;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/select_normal.png") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    /*On retina devices, select2 box icon problem
+    ISWEBINT-153 stated as meaningless character(IMG_0481) */
+
+}
+
+.select2-container .select2-choice:hover .select2-arrow b{
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/select_hover.png");
+}
+
+.select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: center center;
+}
+
+#footer .select2-container .select2-choice .select2-arrow b {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/select_active.png") !important;
+    background-position: center center;
+    background-size: auto !important;
+
+    /*On retina devices, select2 box icon problem
+        ISWEBINT-153 stated as meaningless character(IMG_0481) */
+
+}
+
+#footer .chosen-container-single .chosen-single div b, #footer .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/footer_select_icon.png");
+}
+
+/*select2*/
+
+/* iCheck*/
+
+.icheckbox_isWeb,
+.iradio_minimal-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #D3D3D3;
+    cursor: pointer;
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.icheckbox_isWeb {
+
+}
+
+.icheckbox_isWeb.hover {
+    border: 1px solid #94d3e2;
+}
+
+.icheckbox_isWeb.checked {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/check_box.png");
+    background-color: #219bc3;
+    border: 1px solid #219bc3;
+}
+
+.icheckbox_isWeb.disabled {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/check_box_disabled.png");
+    cursor: default;
+}
+
+.icheckbox_isWeb.checked.disabled {
+
+}
+
+.iradio_minimal-blue {
+    background-position: -100px 0;
+}
+
+.iradio_minimal-blue.hover {
+    background-position: -120px 0;
+}
+
+.iradio_minimal-blue.checked {
+    background-position: -140px 0;
+}
+
+.iradio_minimal-blue.disabled {
+    background-position: -160px 0;
+    cursor: default;
+}
+
+.iradio_minimal-blue.checked.disabled {
+    background-position: -180px 0;
+}
+
+/* iCheck*/
+
+
+/*nanoScroller*/
+.nano > .nano-content{
+    padding-right: 30px;
+}
+
+.nano > .nano-pane{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 8px;
+}
+
+.nano > .nano-pane > .nano-slider{
+    background-color: #bfc3c6;
+    width: 8px;
+    margin: 0;
+}
+
+/*nanoScroller*/
+
+
+#webSiteOptionsContainer {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #000000;
+}
+
+
+/* Logout Popup Style*/
+.logoutPopupContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logoutPopup {
+    width: 660px;
+    height: 195px;
+    background-color: #FFFFFF;
+    padding: 30px 30px 25px 30px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+}
+.logoutPopup .logoutMessage {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    color: #646464;
+    padding: 15px 40px 20px 40px;
+    line-height: 24px;
+}
+#logoutBottomButtonsContainer {
+    width: 100%;
+    height: 60px;
+}
+#logoutBottomButtonsContainer td{
+    vertical-align: middle;
+}
+#logoutBottomButtonsContainer td:last-child{
+    width: 160px;
+}
+#logoutBottomButtonsContainer button {
+    width: 140px;
+    font-weight: 600;
+}
+#secureLogoutMessage {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: #08335E;
+    text-align: center;
+    padding: 40px 0 5px 0;
+}
+
+::-ms-clear, ::-ms-reveal {
+    display: none;
+}
+
+a.blueLink {
+    color: #49A5E0;
+    text-decoration: underline;
+}
+
+.errorIFrame {
+    height: 100%;
+    width: 800px;
+}
+
+.pageContainer.iframePageContainer {
+    width: 760px;
+}
+
+
+/* IE10 text-indent fixes for login pages */
+
+.ie10 #_ctl0_MusNoText, .ie10 #ParolaText, .ie10 #captcha, .ie10 #phoneNumber, .ie10 #_ctl0_TxtTCKN, .ie10 #_ctl0_TxtKart,
+.ie10 #mobileCode, .ie10 #oneTimePassword, .ie10 #oneTimePasswordIAnahtar, .ie10 #customerrNo, .ie10 #cellPhone, .ie10 #anindaSifreCaptcha,
+.ie10 #mobilOnayKodu, .ie10 #cardNo, .ie10 #newPassword, .ie10 #reNewPassword, .ie10 #cvv2, .ie10 #cvv3, .ie10 #cardPass2, .ie10 #cardPass3,
+.ie10 #welcomeMessage, .ie10 #password, .ie10 #rePassword, .ie10 #noteTitle, .ie10 #noteDetail {
+
+    padding-left: 15px !important;
+    text-indent: 0 !important;
+}
+
+.ie10 #_ctl0_MusNoText, .ie10 #ParolaText, .ie10 #phoneNumber {
+    width: 428px !important;
+}
+
+.ie10 #welcomeMessage {
+    width: 428px !important;
+}
+
+.ie10 #_ctl0_TxtTCKN, .ie10 #_ctl0_TxtKart, .ie10 #captcha{
+    width: 485px !important;
+}
+
+.ie10 #mobileCode, .ie10 #customerrNo, .ie10 #cellPhone, .ie10 #anindaSifreCaptcha {
+    width: 563px !important;
+}
+
+.ie10 #mobilOnayKodu{
+    width: 506px !important;
+}
+
+.ie10 #cvv2, .ie10 #cvv3, .ie10 #cardPass2, .ie10 #cardPass3 {
+    width: 25px !important;
+}
+
+.ie10 #cardNo, .ie10 #newPassword, .ie10 #reNewPassword, .ie10 #password, .ie10 #rePassword{
+    width: 266px !important;
+}
+
+.ie10 .anindaSifre3 .formCell, .ie10 .changePasswordExpired .formCell {
+    width: 281px !important;
+}
+
+.ie10 .anindaSifre3 .width40 {
+    text-indent: 0;
+    padding-left: 15px;
+    width: 25px !important;
+}
+
+.ie10 #noteTitle, .ie10 #noteDetail {
+    width: 493px !important;
+}
+
+#tutorialContainer .popUpContainer{
+    width: 500px !important;
+}
+
+#tutorialContainer .mainImg {
+    border: 1px solid #E5E5E5;
+}
+
+#tutorialContainer .popupContent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+#tutorialContainer .centerdiv{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#tutorialContainer .photo-div{
+    width: 444px;
+}
+
+#tutorialContainer .title{
+    color: #0b345d !important;
+}
+
+#tutorialContainer .title-desc{
+    margin-top: 10px;
+    font-family: SohoGothicPro, Helvetica, Arial, verdana, sans-serif;
+    font-size: 16px;
+    color: #0b345d;
+    width: 469px;
+}
+
+#tutorialContainer .desc{
+    font-family: Helvetica Neue, Helvetica, Arial, verdana, sans-serif;
+    font-size: 14px;
+    color: #606060;
+}
+
+#tutorialContainer .large{
+    width: 368px;
+}
+
+#tutorialContainer .small{
+    width: 169px;
+}
+
+#tutorialContainer .button-holder{
+    width: 200px;
+    margin-top: 10px;
+    font-family: Helvetica, Arial, verdana, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#tutorialContainer .skip{
+    float: right;
+}
+
+#tutorialContainer .navigator{
+    width: 325px;
+
+}
+
+#tutorialContainer .littleBox {
+    float: left;
+    background: #ffffff;
+    width: 11px;
+    height: 11px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 1px solid #848484;
+    border-radius: 2px;
+}
+
+#tutorialContainer .littleBox.firstBox {
+    margin-left: 70px;
+}
+
+#tutorialContainer .selectedBox{
+    background: #2d9fea;
+    margin: 1px;
+    height: 9px;
+    width: 9px;
+}
+
+#tutorialContainer .skip {
+    font-family: Helvetica Neue, Helvetica, Arial, verdana, sans-serif;
+    font-size: 14px;
+    color: #2d9fea;
+    text-decoration: underline;
+    margin-top: 14px;
+}
+
+#tutorialContainer .orangeButton {
+    padding: 10px 26px;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Lucida Grande', Helvetica Neue, Helvetica Neue, Helvetica, Arial, verdana, sans-serif;
+}
+
+
+.contactUsPopUpBody .radioGroup {
+    margin-bottom: 10px;
+}
+
+.contactUsPopUpBody .radioGroup .radioLabel{
+    color:#000000;
+}
+
+.contactUsPopUpBody{
+    width: 550px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactUsPopUpIframe {
+    min-height: 0 !important;
+}
+
+.contactUsFormPopUpIframe{
+    height: 551px;
+}
+
+.contactUsConfirmationPopUpIframe{
+    height: 400px;
+}
+
+.contactUsConfirmationPopUpContainer{
+    height: 200px;
+}
+
+.contactUsFormPopUpContainer{
+    background-color: white;
+    padding-top: 0px;
+}
+
+.contactUsConfirmationPopUpContainer {
+    text-align: center;
+}
+
+.contactUsPopUpContainer .confirmationText {
+    color: #00aa00;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    /*margin-bottom: 20px; OMNI*/
+}
+
+.contactUsPopUpContainer .confirmationInfo {
+    color: #000000;
+}
+
+.contactUsFooterContainer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.contactUsFooterContainer .contactUsFooterInnerContainer {
+    padding: 20px;
+    /*background-color: #f1f1f1;
+    border-top: 1px solid #dddddd;*/
+    min-height: 46px;
+}
+
+.contactUsPopUpBody .darkBlueButton:hover {
+    background-color: #024487;
+}
+
+.contactUsPopUpBody .darkBlueButton{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 30%;
+}
+
+#closeConfirmationButton{
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    display: block;
+}
+
+#contactUsFormSubmitButton{
+    margin-left: auto;
+    cursor: pointer;
+    display: block;
+}
+
+#contactUsFormSubmitButton:focus{
+    background-color: #024487;
+}
+
+#contactUsForm {
+    margin: 0;
+}
+
+#contactUsForm .textLabel{
+    color: #000000;
+    display: block;
+}
+
+
+.contactUsFormErrorContainer{
+    height: 20px;
+}
+.contactUsFormSubmitErrorContainer{
+    height: 55px;
+    width: 100%;
+    background-color: #fff2f2;
+    color: #ff0000;
+    border: 1px solid #fff2f2;
+    display:none;
+}
+.contactUsFormSubmitErrorIcon {
+    height: 31px;
+    width: 51px;
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/red_error_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contactUsFormSubmitErrorText {
+    margin-left: 55px;
+    height: 55px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#contactMailErrorContainer{
+    height: 40px !important;
+}
+
+.contactPhoneContainer #contactPhone {
+    width: 90%;
+}
+
+.contactPhoneContainer .contactPhoneInfo {
+    display: inline-block;
+    position: absolute;
+    height: 44px;
+}
+
+.contactPhoneContainer .contactPhoneInfoContent {
+    display: none;
+}
+
+#messageContainer {
+    margin-top: 20px;
+}
+
+#Yardim_messageTextArea {
+    width: 98%;
+    background-color: #ffffff;
+    resize: none;
+    height: 161px;
+    padding: 5px;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    overflow:auto;
+}
+
+.display-block{
+    display:block !important;
+}
+
+.display-none{
+    display:none !important;
+}
+
+#messageTextAreaError{
+    margin-top: 0px !important;
+}
+
+#contactOptionError{
+    margin-top: 0px !important;;
+}
+
+#contactMailError{
+    margin-top: 0px !important;
+    padding-top: 10px;
+    background-position: left 10px;
+}
+
+.popUpHeaderContainer{
+    position:relative;
+}
+
+.contactUsPopUpOverlay .popUpHeaderContainer .popUpCloseButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.contactUsPopUpOverlay {
+    position: fixed;
+    overflow: auto;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+}
+
+.contactUsFormPopUpBody .popUpFooterContainer{
+    padding: 10px 20px;
+    min-height: 30px !important;
+}
+
+.confirmationIcon {
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/confirmation_icon.png");
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+#transactionRestrictionsBody{
+    color: black;
+    background-color: white;
+    width: 680px;
+    padding: 20px;
+    height: 500px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#transactionRestrictionsTitle {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+#transactionRestrictionsContainer{
+    color: black;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    height: 800px;
+}
+
+.transactionRestrictionContainer{
+    height: 37px;
+    background-color: lightgrey;
+    background-color: #e5e5e5;
+
+    border: 1px solid #e5e5e5;;
+    width: 680px;
+    position: relative;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+
+#transactionRestrictionsBody .transactionRestrictionBar{
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 31px;
+    border-radius: 4px;
+    line-height: 31px;
+}
+
+#transactionRestrictionsBody .transactionRestrictionBarContainer{
+    width: 530px;
+    /*background-color: #e5e5e5;*/
+    height: 37px;
+    border-radius: 4px;
+    float: left;
+}
+
+#securityBarVeryLimited{
+    background-color: #f01f1f;
+    border-radius: 4px;
+    width: 25%;
+}
+
+#securityBarLimited{
+    background-color: #f0641f;
+    width: 50%;
+}
+
+#securityBarStandard{
+    background-color: #f0951f;
+    width: 75%;
+}
+
+#securityBarLimitless{
+    background-color: #36af1a;
+    width: 100%;
+}
+
+#transactionRestrictionsBody .transactionRestrictionButtonContainer{
+    width: 116px;
+    line-height: 35px;
+    height: 35px;
+    background-color: #e5e5e5;
+    float: right;
+}
+
+#transactionRestrictionsBody .transactionRestrictionButtonContainer .transactionRestrictionCheckBoxIcon{
+    width: 40px;
+    height: 35px;
+    background-image: url("https://www.isbank.com.tr/Internet/Omni/assets/img/green_check_box_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+#transactionRestrictionsBody .transactionRestrictionButtonContainer .transactionRestrictionSelectedText{
+    font-size: 14px;
+    color:  #0b345c;
+    width: 76px;
+    float: right;
+    text-align: left;
+}
+
+#transactionRestrictionsBody .transactionRestrictionButtonContainer .transactionRestrictionDeselectButton {
+    position: relative;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    height: 100%;
+    text-align: center;
+    line-height: 37px;,
+}
+
+
+#transactionRestrictionsBody .transactionRestrictionButtonContainer .transactionRestrictionSelectButton{
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color:  #0b345c;
+    border: 1px solid  #e5e5e5;
+    background-color: white;
+    cursor: pointer;
+}
+
+#transactionRestrictionsBody .transactionRestrictionBarContainer .securityBarText{
+    color: white;
+    margin-left: 10px;
+}
+
+#transactionRestrictionsContainer .transactionRestrictionInfoContainer{
+    width: 415px;
+    margin-top: 10px;
+    background-color: white;
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    height: 10px;
+    position: relative;
+}
+
+.transactionRestrictionInfoText{
+    background-color: white;
+    color:  #878585;
+    text-align: center;
+    font-size: 14px;
+    width: 200px;
+    line-height: 16px;
+}
+
+.textSelectDisabled{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+#personalSecuritySettingsContainer{
+    min-width: 600px;
+    color:black;
+}
+#personalSecuritySettingsTitle {
+    font-size: 18px;
+    color:  #08335e;
+}
+.secondFactorPageContent .loginInputContainer {
+    position: relative;
+}
+.secondFactorPageContent .loginInputContainer .keyPadContainer{
+    right: -217px;
+    top: 65px;
+    left: auto;
+}
+.loginInputContainer{
+    position: relative;
+}
+.loginInputContainer .keyPadContainer{
+    right: -217px;
+    top: 65px;
+    left: auto;
+}
+
+#mainContent.loginMainContent .loginInputContainer .keyPadContainer{
+    right: 175px;
+    top: 125px;
+}
+
+.multiTabSecondFactor .formButtonHolder{
+    width: 500px;
+}
+
+.singleTabSecondFactor .formButtonHolder{
+    width: 578px;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    .formButtonHolder {
+         width: 100%;
+    }
+     .loginErrorContainer {
+        width: 95% !important ;
+    }
+
+}
+
+
+@media only screen and (max-width: 1366px){
+    .loginErrorContainer {
+        width: 465px;
+    }
+    .ie10 #_ctl0_MusNoText, .ie10 #ParolaText, .ie10 #phoneNumber {
+        width: 328px !important;
+    }
+    .ie10 #_ctl0_TxtTCKN, .ie10 #_ctl0_TxtKart, .ie10 #captcha {
+        width: 385px !important;
+    }
+    .ie10 #mobilOnayKodu {
+        width: 406px !important;
+    }
+    .ie10 #mobileCode, .ie10 #customerrNo, .ie10 #cellPhone, .ie10 #anindaSifreCaptcha {
+        width: 463px !important;
+    }
+    .ie10 #cardNo, .ie10 #newPassword, .ie10 #reNewPassword {
+        width: 210px !important;
+    }
+    .ie10 #password, .ie10 #rePassword {
+        width: 216px !important;
+    }
+    .ie10 .anindaSifre3 .formCell, .ie10 .changePasswordExpired .formCell {
+        width: 231px !important;
+    }
+    .multiTabSecondFactor .formButtonHolder{
+        width: 400px;
+    }
+    .singleTabSecondFactor .formButtonHolder{
+        width: 478px;
+    }
+}
+.touchOverlay{
+    background-color: transparent;
+    opacity: 0.2;
+    z-index: 101;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+.menuOverlay {
+    position: fixed;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    z-index: 109;
+    background-color: transparent;
+}
+.hidden {
+    display: none;
+}
+
+/* ------------------------------------ OMNI --------------------------------------------*/
+
+.divError
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.typetab { color:#1064B7; font-size:12px; font-weight:bold; text-align:center; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}
+.typetab-center { color:#1064B7; }
+	
+.typeintab { color:#1064B7; font-size:12px; font-weight:bold; text-align:center; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}		
+.intab-center {color:#1064B7; }
+.selected_tab {color:#ffffff; background-color:#1064B7;}
+
+.tabMenuUnderline
+{
+	/*width:0px;*/
+	border-width:1px;
+	border-style:solid;
+	border-color:#1064B7;
+	padding:0;
+	/*display:none;*/
+}
+.tabAltiBeyazHTML  
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    background:url(https://www.isbank.com.tr/intsube_Resim_new/Resimler/tabber/TabMenuAltiBeyazHTML.png) left top no-repeat;
+    background-position-x:0px; 
+    width:880px;     
+}
+
+#div_dekontContent
+{
+    text-align : left;
+    font-size: 11px;
+    font-family: Arial;
+    color: #2F5465;
+    width:900px;
+}
+
+#div_dekontContent b
+{
+    font-weight : bold;
+    padding-right: 3px;
+}
+
+#div_dekontContent th
+{
+    text-align : left;
+}
+
+#div_dekontContent td
+{
+    text-align : left;
+    padding-bottom: 5px;
+}
+#div_dekontPrint
+{
+    font-size: 11px;
+    font-family: Arial;
+    color: #2F5465;    
+}
+#div_dekontPrint td
+{
+    vertical-align:middle;
+}
+.DivBilgiFisi
+{
+    PADDING-BOTTOM: 5px; PADDING-LEFT:10px; PADDING-TOP:10px; PADDING-RIGHT: 10px;
+}
+.pnlYtiFrameForLightBox
+{
+    position:absolute;
+    z-index:20000;
+}
+
+
+#Form1Div {
+    height: 100%;
+}
+
+
+/* OMNI */
+.ui-login-z5 {
+    display:none;
+}
+
+
+/* OMNI */
+.marginTop0
+{
+    margin-top:0px;
+}
+
+.marginBottom20
+{
+    margin-bottom:20px;
+}
+/* OMNI */
+
+.ui-tabs .ui-tabs-singlepanel {
+    background-color: #fff;
+    color: #434343;
+    padding-left: 0;
+
+}
+
+/*OMNI*/
+
+@media only screen and (max-width: 768px){
+   
+   .tabHeightIPT
+    {
+         height:65px !important;
+    }
+    
+    .tabHeightSecovid {
+         height:135px !important;
+    }
+    
+}
+
+/*OMNI*/
+
+/* OMNI*/
+
+@media only screen and (max-width: 768px){
+    .iamresponsive {
+        width: 0;
+        min-width:100%;
+        max-width:100%;
+    }
+
+    .iframeContainer {    
+        width: 100%;
+    }
+}
+
+/*OMNI*/

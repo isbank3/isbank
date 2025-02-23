@@ -1,0 +1,85 @@
+.newblack_overlay{
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-color: black;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	z-index:19999;
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity:.70;
+	
+}
+
+.newwhite_content{
+
+	bottom: 0px;
+	top: 15px;
+	left:0px;
+	right:0px;
+	height:520px;
+	width:505px;
+	margin:auto;
+	padding:2px;
+	position: fixed;/*absolute; fixed;*/
+	display: none;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.lightFrame{
+	height: 500px;
+	width: 600px;
+	background-color:white;
+}
+
+.closeButton{
+	bottom: 0px;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:18px;
+	width:500px;
+	margin:0px;
+	/*padding:2px;
+	position:fixed;*/
+	overflow: auto;
+	text-align:right;
+	background-color:white;
+	
+}
+
+.loading
+{
+	width:100px;
+	height:100px;
+	display:block;
+	position:fixed;
+}
+
+.closeImage
+{
+	cursor:pointer;
+	padding-top:2px;
+	padding-right:2px;
+}
+
+.unselectable { 
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.noscroll
+{
+    overflow:hidden;
+    position: fixed;
+    height: 100%;
+    overflow:hidden;
+}

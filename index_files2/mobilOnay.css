@@ -1,0 +1,178 @@
+
+#liveSupport {
+    display: none;
+}
+
+.loginMobileApproveButtonCell {
+    text-align: right;
+}
+
+#pageContent {
+    width: 443px;
+}
+
+#pageContentDesc {
+    padding-right: 0;
+}
+
+.pageContentIPadPortrait #timerContainerTd {
+    width: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pageContentIPadPortrait #timerCanOtpApproveByDiyalogContainerTd {
+    width: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pageContentIPadPortrait #timerCustomerCanLoginBySealContainerTd {
+    width: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.loginInputContainer {
+    width: 443px;
+    display: table-cell;
+    margin-bottom: 0;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+/*#mobileConfirmationCode {*/
+#MobilOnaySifresi {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+.mobileCodeContainer {
+    width: 500px;
+    height: 55px;
+    display: table;
+}
+
+#mobileCode {
+    box-sizing: border-box;
+}
+
+.mobileApproveButton {
+    width: 150px;
+    margin-top: 10px;
+}
+
+#resendCode {
+    margin-right: 0;
+}
+
+.formButtonHolder {
+    margin-top: 21px;
+}
+
+.loginInputContainer .keyPadContainer {
+    right: auto;
+    top: 125px;
+    left: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .pageContentIPadPortrait {
+        width: 100% !important;
+    }
+
+    #mainContent {
+        padding-bottom: 0;
+        min-height: 0;
+    }
+
+    #pageContent {
+        width: 100%;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+        #pageContent #formContainer {
+            padding: 40;
+        }
+
+    .loginInputContainer {
+        margin-bottom: 14px;
+        width: 100%;
+        padding-right: 14px;
+    }
+
+    .formButtonHolder {
+        margin-top: 18px;
+        margin-right: 63px;
+    }
+
+    .formButtonHolder {
+        margin-top: 28px;
+        padding-right: 2px;
+        min-height: 30px;
+        width: auto;
+    }
+
+    .mobileCodeContainer {
+        width: 100%;
+    }
+
+    #mobileCodeBottomButtonsContainer {
+        height: 120px;
+    }
+
+        #mobileCodeBottomButtonsContainer button.ui-button {
+            width: 150px;
+            padding: 15px 5px;
+        }
+
+    .orangeButton:disabled, .darkBlueButton:disabled {
+        letter-spacing: -0.5px;
+    }
+
+    #mobileCodeBottomButtonsContainer .loginMobileApproveButtonCell {
+        vertical-align: middle;
+    }
+
+    #timer {
+        width: 100%;
+    }
+
+    #timerCanOtpApproveByDiyalog {
+        width: 100%;
+    }
+
+    #timerCustomerCanLoginBySeal {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .pageContainer {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #pageContent {
+        padding-right: 0;
+    }
+
+        #pageContent #formContainer {
+            padding: 0;
+        }
+
+    .keyPadContainer {
+        display: none !important;
+    }
+
+    #mobileCodeBottomButtonsContainer button.ui-button {
+        width: 100%;
+    }
+
+    .formButtonHolder {
+        margin-right: 0;
+    }
+}

